@@ -4,7 +4,7 @@ function img_search() {
     let x = document.getElementsByClassName('scenary');
 
     for ( i = 0; x.length; i++) {
-        if( !x[i].innerHTML.toLowerCase().includes(input)) {
+        if( !x[i].getAttribute('alt').toLowerCase().includes(input)) {
             x[i].style.display='none';
         }
         else {
