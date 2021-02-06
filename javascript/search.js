@@ -5,10 +5,12 @@ function img_search() {
 
     for ( i = 0; x.length; i++) {
         if( !x[i].getAttribute('alt').toLowerCase().includes(input)) {
-            x[i].style.display='none';
+            x[i].parentElement.style.display='none';
+            x[i].parentElement.style.listStyleType='none';
         }
         else {
-            x[i].style.display='list-item'
+            x[i].parentElement.style.display='list-item'
+            x[i].parentElement.style.listStyleType='none';
         }
     }
 
