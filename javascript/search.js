@@ -3,7 +3,7 @@ function img_search() {
     input = input.toLowerCase();
     let x = document.getElementsByClassName('scenary');
 
-    for ( i = 0; x.length; i++) {
+    for ( i = 0; i < x.length; i++) {
         if( !x[i].getAttribute('alt').toLowerCase().includes(input)) {
             x[i].parentElement.style.display='none';
             x[i].parentElement.style.listStyleType='none';
