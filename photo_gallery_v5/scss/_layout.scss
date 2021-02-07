@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    @include flexy(flex, column){
+        width: 90%;
+        max-width: 900px;
+        margin: auto;
+        }
+
+}
+
+fieldset {
+    @include flexy (flex, row, null, center){
+        width: inherit;
+        margin: 25px auto;
+        border: none;
+    }
+}
+
+input {
+    width: 70%;
+    max-width: 550px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid palette(second, base);
+    box-shadow:  4px 3px 5px palette(second, dark);
+    &:focus {
+        border: 3px solid palette(main, base);
+        box-shadow: 6px 6px 7px palette(main, light);
+    }
+}
+
+.img_wrap {
+    @include gridbot(grid, repeat(auto-fit, minmax(200px, 1fr)), null, 25px){
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    & img {
+        border: 3px solid palette(main);
+        padding: 2px;
+    }
+    & a{
+        margin: auto;
+        list-style-type: none;
+    }
+
+}
+
+.scenary{
+    display: list-item;
+}

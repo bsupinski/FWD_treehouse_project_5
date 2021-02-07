@@ -1,0 +1,33 @@
+//Font variables
+$font-url: 'https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap';
+
+$main_font: 'Roboto', sans-serif;
+$second_font: 'Sriracha', cursive;
+
+//If statement to import font
+@if variable-exist(font-url) {
+    @import url($font-url);
+}
+
+
+//Color variables
+
+$main_color: lightcoral;
+$second_color: rgb(78, 70, 70);
+
+$color-palette: (
+    main: (
+        light: lighten($main_color, 12%),
+        base: $main_color,
+        dark: darken($main_color, 12%),
+    ),
+    second:(
+        light: lighten($second_color, 45%),
+        base: $second_color,
+        dark: darken($second_color, 45%),
+    )
+);
+
+@function palette($palette, $shade: 'base'){
+    @return map-get(map-get($color-palette, $palette), $shade)
+}

@@ -1,0 +1,25 @@
+@mixin flexy($disp: flex, 
+$dir: null,
+$wrap: null,
+$just: null, 
+$align: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    align-items: $align;
+    @content;
+
+}
+
+@mixin gridbot($disp: grid, 
+$col: 1fr, 
+$row: auto, 
+$gap: null, 
+) {
+    display: $disp;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-gap: $gap;
+    @content;
+}
