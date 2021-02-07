@@ -35,8 +35,6 @@ input {
 
 .img_wrap {
     @include gridbot(grid, repeat(auto-fit, minmax(200px, 1fr)), null, 25px){
-        justify-content: center;
-        align-content: center;
         width: 100%;
         margin: auto;
     }
