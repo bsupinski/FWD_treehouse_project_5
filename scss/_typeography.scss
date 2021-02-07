@@ -1,0 +1,10 @@
+input{
+    font-family: $main_font;
+    color: palette(second);
+    font-size: 16px;
+    &::placeholder {
+        font-family: $second_font;
+        color: palette(main, light);
+        font-size: 1em;
+    }
+}

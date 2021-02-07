@@ -4,13 +4,13 @@ function img_search() {
     let x = document.getElementsByClassName('scenary');
 
     for ( i = 0; i < x.length; i++) {
-        if( !x[i].getAttribute('alt').toLowerCase().includes(input)) {
-            x[i].parentElement.style.display='none';
-            x[i].parentElement.style.listStyleType='none';
+        if( !x[i].getAttribute('data-caption').toLowerCase().includes(input)) {
+            x[i].style.display='none';
+            x[i].style.listStyleType='none';
         }
         else {
-            x[i].parentElement.style.display='list-item'
-            x[i].parentElement.style.listStyleType='none';
+            x[i].style.display='list-item'
+            x[i].style.listStyleType='none';
         }
     }
 

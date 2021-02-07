@@ -1,4 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Jomhuria&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap");
+input {
+  font-family: "Roboto", sans-serif;
+  color: #4e4646;
+  font-size: 16px;
+}
+input::placeholder {
+  font-family: "Sriracha", cursive;
+  color: #f6b7b7;
+  font-size: 1em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +35,7 @@ fieldset {
 input {
   width: 70%;
   max-width: 550px;
-  padding: 8px;
+  padding: 10px;
   outline: none;
   border: 1px solid #4e4646;
   box-shadow: 4px 3px 5px black;
@@ -49,6 +60,7 @@ input:focus {
 }
 .img_wrap a {
   margin: auto;
+  list-style-type: none;
 }
 
 .scenary {

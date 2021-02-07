@@ -1,8 +1,8 @@
 //Font variables
-$font-url: 'https://fonts.googleapis.com/css2?family=Jomhuria&family=Josefin+Sans&display=swap';
+$font-url: 'https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap';
 
-$main_font: 'Jomhuria', cursive;
-$second_font: 'Josefin Sans', sans-serif;
+$main_font: 'Roboto', sans-serif;
+$second_font: 'Sriracha', cursive;
 
 //If statement to import font
 @if variable-exist(font-url) {

@@ -23,7 +23,7 @@ fieldset {
 input {
     width: 70%;
     max-width: 550px;
-    padding: 8px;
+    padding: 10px;
     outline: none;
     border: 1px solid palette(second, base);
     box-shadow:  4px 3px 5px palette(second, dark);
@@ -40,12 +40,13 @@ input {
         width: 100%;
         margin: auto;
     }
-    & img{
+    & img {
         border: 3px solid palette(main);
         padding: 2px;
     }
     & a{
         margin: auto;
+        list-style-type: none;
     }
 
 }
